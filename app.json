@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "COVIDTracker",
+    "description": "An app for tracking daily COVID-19 stats all over the world",
+    "slug": "COVIDTracker",
+    "platforms": ["ios", "android", "web"],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#cc4b1a"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.ritzcovan"
+    },
+    "android": {
+      "package": "com.ritzcovan"
+    }
+  }
+}
