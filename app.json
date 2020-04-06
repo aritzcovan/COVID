@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "COVIDTracker",
-    "description": "An app for tracking daily COVID-19 stats all over the world",
+    "description": "An app for viewing daily COVID-19 stats",
     "slug": "COVIDTracker",
     "platforms": ["ios", "android", "web"],
     "version": "1.0.0",

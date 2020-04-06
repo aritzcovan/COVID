@@ -9,7 +9,7 @@ import {
 } from "react-native";
 import { locationList } from "../helpers/pickerSource";
 import { white, purple } from "../helpers/colors";
-import { FontAwesome, Entypo } from "@expo/vector-icons";
+import { FontAwesome, AntDesign } from "@expo/vector-icons";
 import { ScrollView } from "react-native-gesture-handler";
 
 export default function HomeScreen({ navigation }) {
@@ -82,7 +82,7 @@ export default function HomeScreen({ navigation }) {
           }}
         >
           <Text style={styles.iosButtonText}>About</Text>
-          <FontAwesome name="question-mark" size={25} color={purple} />
+          <AntDesign name="question" size={25} color={purple} />
         </TouchableOpacity>
       </ScrollView>
     </View>
