@@ -46,7 +46,7 @@ export default function HomeScreen({ navigation }) {
         <Text style={styles.iosButtonText}>{btnText}</Text>
       </TouchableOpacity>
       <Picker
-        style={[styles.picker, { height: screenHeight, width: screenWidth }]}
+        style={[styles.picker, { height: screenHeight, width: 200 }]}
         selectedValue={selectedPlace}
         onValueChange={newValue => setSelectedPlace(newValue)}
       >
@@ -54,6 +54,7 @@ export default function HomeScreen({ navigation }) {
           <Picker.Item key={i} value={location} label={location} />
         ))}
       </Picker>
+
       <ScrollView style={{flex: 1}}>
         <TouchableOpacity
           style={[styles.iosButton]}

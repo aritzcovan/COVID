@@ -21,7 +21,8 @@
       "bundleIdentifier": "com.ritzcovan"
     },
     "android": {
-      "package": "com.ritzcovan"
+      "package": "com.ritzcovan",
+      "permissions": []
     }
   }
 }
