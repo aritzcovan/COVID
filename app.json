@@ -4,7 +4,7 @@
     "description": "An app for viewing daily COVID-19 stats",
     "slug": "COVIDTracker",
     "platforms": ["ios", "android", "web"],
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -23,6 +23,7 @@
     "android": {
       "package": "com.ritzcovan",
       "permissions": []
-    }
+    },
+    "githubUrl": "https://github.com/aritzcovan/COVID.git"
   }
 }
