@@ -1,6 +1,7 @@
 import axios from "axios";
 //const apiKey = "aa3ef58adc614135bbed416c2a960d11";
-const apiKey = "ed21bd0c1amshf69892a2e76648ap13bff5jsn96a8c9fbee96";
+//sign up for your own api key at rapidapi.com
+const apiKey = "";
 
 export function getStats(location) {
   //const uri = `https://api.smartable.ai/coronavirus/stats/${location}`;
