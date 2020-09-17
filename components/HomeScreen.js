@@ -5,9 +5,10 @@ import {
   Picker,
   Dimensions,
   TouchableOpacity,
-  StyleSheet
+  StyleSheet,
 } from "react-native";
 import { locationList } from "../helpers/pickerSource";
+import { countryListKey } from "../helpers/countries";
 import { white, purple } from "../helpers/colors";
 import { FontAwesome, AntDesign } from "@expo/vector-icons";
 import { ScrollView } from "react-native-gesture-handler";
@@ -32,7 +33,7 @@ export default function HomeScreen({ navigation }) {
   }
 
   let locations = usOnly
-    ? locationList.filter(loc => loc.indexOf("US") > -1)
+    ? locationList.filter((loc) => loc.indexOf("US") > -1)
     : locationList;
 
   return (
@@ -48,14 +49,14 @@ export default function HomeScreen({ navigation }) {
       <Picker
         style={[styles.picker, { height: screenHeight, width: 200 }]}
         selectedValue={selectedPlace}
-        onValueChange={newValue => setSelectedPlace(newValue)}
+        onValueChange={(newValue) => setSelectedPlace(newValue)}
       >
         {locations.map((location, i) => (
           <Picker.Item key={i} value={location} label={location} />
         ))}
       </Picker>
 
-      <ScrollView style={{flex: 1}}>
+      <ScrollView style={{ flex: 1 }}>
         <TouchableOpacity
           style={[styles.iosButton]}
           onPress={() => {
@@ -95,7 +96,7 @@ const styles = StyleSheet.create({
     justifyContent: "flex-start",
     alignItems: "center",
     backgroundColor: "white",
-    flex: 1
+    flex: 1,
   },
   button: {
     width: 200,
@@ -105,11 +106,11 @@ const styles = StyleSheet.create({
     padding: 10,
     marginBottom: 20,
     borderRadius: 10,
-    borderWidth: 1
+    borderWidth: 1,
   },
   title: {
     fontSize: 24,
-    padding: 20
+    padding: 20,
   },
   iosButton: {
     width: 200,
@@ -123,10 +124,10 @@ const styles = StyleSheet.create({
     padding: 15,
     paddingLeft: 25,
     paddingRight: 25,
-    marginBottom: 25
+    marginBottom: 25,
   },
   iosButtonText: {
-    fontSize: 20
+    fontSize: 20,
   },
-  picker: {}
+  picker: {},
 });

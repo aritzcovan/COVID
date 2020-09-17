@@ -1,4 +1,3 @@
-// utils/colors.js
 
 // export const purple = "#292477";
 export const purple = "#cc4b1a";
